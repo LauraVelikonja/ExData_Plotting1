@@ -29,12 +29,6 @@ data[,i] <- as.numeric(data[,i])
 # Export to png
 png(filename = "plot3.png",width = 480, height = 480)
 
-# Creating plot 4
-# Setting grid
-par(mfrow = c(2,2))
-
-# plot1
-
 # plot3
 plot(data$Timestamp, data$Sub_metering_1, type = "l", ylab = "Energy sub metering", xlab ="")
 lines(data$Timestamp,data$Sub_metering_2, col = "red")
